@@ -1,0 +1,328 @@
+/* GERAL ------------------------------------------------- */
+html {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e3e3e3;
+}
+
+em {
+    font-size: 18px;
+}
+
+body {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.playButton:hover {
+    cursor: pointer;
+}
+
+/* CABEÇALHO -------------------------------------------- */
+header {
+    background-color: #373435;
+}
+
+#logo {
+    width: 150px;
+    margin: auto;
+    display: block;
+}
+
+#menu {
+    text-align: center;
+    padding: 10px;
+}
+
+.menus {
+    color: #f1a026;
+    background-color: #373435;
+    border: none;
+    width: 88px;      /* Define distância entre menus */
+    font-size: 0.850em;
+}
+
+/* IMAGEM CENTRAL ---------------------------------------- */
+#eloan {
+    width: 50%;
+    max-width: 700px;
+    margin: auto;
+    display: block;
+    float: none;
+}
+
+/* TOP LANÇAMENTOS ----------------------------------------------- */
+#musicas h1 {
+    color: #f1a026;
+    font-weight: 300;
+    font-size: 1.75em;
+    text-align: right;
+}
+
+/* BLOCOS DE MÚSICAS ----------------------------------------- */
+
+
+.song {          /*div*/
+    background-color: #DEDEDE;
+    text-align: right;
+    margin-bottom: 6px;
+}
+
+.song h2 {       /*Titulo da música*/
+    font-weight: 300;
+    margin: 0px;
+    padding-top: 5px;
+}
+
+.song h3 {
+    color: #f1a026;
+    font-weight: 200;
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+.playButton {
+    border: 0px;
+    background-color: #DEDEDE;
+    float: right;
+    margin-top: 12px;
+    
+}
+
+/* SOCIAL MEDIA ----------------------------------------- */
+
+.socialMediaButton {
+    background-color: #DEDEDE;  
+    border: none;
+}
+
+.socialMedia {
+    display: block;
+    font-weight: 450;
+    color: #f1a026;
+    position: relative;
+    margin-left: 10px;
+    top: -28px;
+}
+
+
+#shadow {
+    background-color: #373435;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+/* Footer ----------------------------------------------------------*/
+
+footer {
+    margin-top: 6px;
+    text-align: center;
+    background-color: #DEDEDE;
+    height: 150px;
+}
+
+footer h1 {
+    font-weight: 150;
+    font-size: 17px;
+    margin: 1px;
+    padding: 15px 0 0px 0;
+    color: #a19b9b;
+}
+
+footer h2 {
+    padding: 0 0 15px 0;
+    font-weight: 150;
+    font-size: 15px;
+    margin: 0;
+    color:#a19b9b;
+}    
+
+
+
+/* Media Queries ------------------------------------------ */
+
+@media only screen and (min-width: 1300px) {
+
+    #musicas {
+        margin-top: -525px;
+        margin-left: 45%;
+    }
+   
+    .song {          /*div*/
+        margin-bottom: 6px; /*distância entre blocos*/
+    }
+    
+    #shadow {
+        margin-top: -465.5px;
+        margin-right: 55%;
+        height: 459px;
+    }
+
+    #verso {
+        color: #f1a026;
+        font-style: italic;
+        font-size: 0.900em;
+        position: relative;
+        top: 45%;
+        left: 10%;
+    }
+}
+
+@media only screen and (max-width: 1299px) and (min-width: 900px) {
+
+    #musicas {
+        margin-top: -435px;
+        margin-left: 45%;
+    }
+
+    .song {          /*div*/
+        margin-bottom: 6px; /*distância entre blocos*/
+        font-size: 0.750em;
+    } 
+    
+    .playButton {
+        position: relative;
+        bottom: 4px;
+    }
+
+    .playImg {
+        height: 30px;
+    }
+
+    #shadow {
+        margin-top: -372.5px;
+        margin-right: 55%;
+        height: 367px;
+    }
+
+    #verso {
+        color: #f1a026;
+        font-style: italic;
+        font-size: 0.700em;
+        position: relative;
+        top: 40%;
+        left: 10%;
+    }
+
+    #logo {
+        width: 120px;
+    }
+
+    footer {
+        position: relative;
+    }
+
+}
+
+@media only screen and (max-width: 899px) and (min-width: 580px) {
+
+
+    #musicas {
+        margin-top: -280px;
+    }
+
+    .song {          /*div*/
+        margin-bottom: 6px; /*distância entre blocos*/
+        font-size: 0.750em;
+    } 
+
+    .playButton {
+        position: relative;
+        bottom: 4px;
+    }
+
+    .playImg {
+        height: 30px;
+    }
+
+    #eloan {
+        position: relative;
+        top: 160.5px;
+        left: -100px;
+        z-index: 3;
+    }
+
+    #shadow {
+        width: 100%;
+        height: 120px
+    }
+
+    #verso {
+        color: #f1a026;
+        font-style: italic;
+        font-size: 0.700em;
+        padding-top: 30px;
+        display: block;
+        text-align: center;      
+    }
+
+    #logo {
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 579px) and (min-width: 200px) {
+
+    #musicas {
+        margin-top: -250px;
+    }
+
+    .song {          /*div*/
+        margin-bottom: 6px; /*distância entre blocos*/
+        font-size: 0.750em;
+        text-align: center;
+    } 
+
+    #musicas h1 {
+        text-align: left;
+        margin-left: 2%;
+        font-size: 1.7em;
+        padding-top: 5px;
+    }
+
+    .playButton {
+        position: relative;
+        bottom: 4px;
+        right: 15px;
+    }
+
+    .playImg {
+        height: 30px;
+    }
+
+    #eloan {
+        position: relative;
+        top: 430.5px;
+    }
+
+    #shadow {
+        position: relative;
+        width: 100%;
+        height: 120px;
+        margin-top: 240px;
+        
+    }
+
+    #verso {
+        color: #f1a026;
+        font-style: italic;
+        font-size: 0.700em;
+        padding-top: 30px;
+        display: block;
+        text-align: center;      
+    }
+
+    #logo {
+        width: 120px;
+    }
+
+    footer h1 {
+        font-size: 15px;
+    }
+
+    footer h2 {
+        font-size: 12px;
+    }
+}
+
+
